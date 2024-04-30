@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    background-color: #1d1d1d;
+}
+
+.main-area {
+    flex: 1;
+    
+}
+
+.video-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+video {
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+    border: 0.5px solid #191d1f;
+    border-radius: 10px;
+}
+
+.video-area {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.video-wrapper{
+    position: relative
+}
+.video-wrapper video{
+    position: relative;
+    z-index: 100;
+    border-radius: 10px;
+
+}
+.video-wrapper div{
+    position: absolute;
+    display: block;
+    z-index: 150;
+    left: 10px;
+    bottom: 10px;
+    color: white;
+}
+
+.video-wrapper h1 {
+    color: #DDD;
+    text-align: center;
+    font-size: 14px;
+}
+
+#current-user {
+    font-weight: bold;
+    color: rgb(72, 186, 206);
+    font-size: 16px;
+}
+
+
+.controls {
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    background-color: #DDD;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.controls span {
+    cursor: pointer;
+}
+
+#leave-button {
+    padding: 20px;
+    background-color: rgb(180, 20, 20);
+    color: #EEE;
+    font-weight: bold;
+    border-radius: 20px;
+}
